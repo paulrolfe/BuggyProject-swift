@@ -11,8 +11,18 @@ import UIKit
 class SearchesViewController: UIViewController, UITableViewDataSource {
 
     static let cellIdentifier = "cellIdentifier"
-    var searches : [String] = []
-    @IBOutlet var tableView : UITableView!
+    let searches: [String]
+    @IBOutlet var tableView: UITableView!
+
+    init(searches: [String]) {
+        self.searches = searches
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        self.searches = []
+        super.init(coder: coder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +36,7 @@ class SearchesViewController: UIViewController, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SearchesViewController.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = searches[(indexPath as NSIndexPath).row]
+        cell.textLabel?.text = searches[indexPath.row]
         return cell
     }
 

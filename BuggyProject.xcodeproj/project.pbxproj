@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04DAF496639AE9CB954A10EE /* Pods_BuggyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B71C539461D028B89F1CB7 /* Pods_BuggyProject.framework */; };
+		5751B4F0234D9F8C00F86276 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751B4EF234D9F8C00F86276 /* ViewModel.swift */; };
 		FFC1D22E1C3E217600630992 /* SearchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1D22D1C3E217600630992 /* SearchesViewController.swift */; };
 		FFC1D2301C3EB7A700630992 /* SearchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D22F1C3EB7A700630992 /* SearchesViewController.xib */; };
 		FFEE79021C3DB91100617AE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE79011C3DB91100617AE4 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		18B45433658D43B219CC1D30 /* Pods-BuggyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuggyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject.release.xcconfig"; sourceTree = "<group>"; };
+		5751B4EF234D9F8C00F86276 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6A4F065FB78AF26FF7C7C8D1 /* Pods-BuggyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuggyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D5B71C539461D028B89F1CB7 /* Pods_BuggyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuggyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC1D22D1C3E217600630992 /* SearchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				FFEE79011C3DB91100617AE4 /* AppDelegate.swift */,
 				FFEE79031C3DB91100617AE4 /* ViewController.swift */,
+				5751B4EF234D9F8C00F86276 /* ViewModel.swift */,
 				FFC1D22D1C3E217600630992 /* SearchesViewController.swift */,
 				FFC1D22F1C3EB7A700630992 /* SearchesViewController.xib */,
 				FFEE79051C3DB91100617AE4 /* Main.storyboard */,
@@ -107,7 +110,6 @@
 				FFEE78FA1C3DB91100617AE4 /* Sources */,
 				FFEE78FB1C3DB91100617AE4 /* Frameworks */,
 				FFEE78FC1C3DB91100617AE4 /* Resources */,
-				89A17672A4FA9BAC491652F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,24 +188,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		89A17672A4FA9BAC491652F9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BuggyProject/Pods-BuggyProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BuggyProject/Pods-BuggyProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,6 +197,7 @@
 			files = (
 				FFEE79041C3DB91100617AE4 /* ViewController.swift in Sources */,
 				FFEE79021C3DB91100617AE4 /* AppDelegate.swift in Sources */,
+				5751B4F0234D9F8C00F86276 /* ViewModel.swift in Sources */,
 				FFC1D22E1C3E217600630992 /* SearchesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,6 +4,6 @@
 use_frameworks!
 
 target 'BuggyProject' do
-  pod 'AFNetworking'
+  #pod 'AFNetworking'
 end
 
