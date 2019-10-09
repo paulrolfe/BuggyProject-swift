@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         validImageView?.backgroundColor = UIColor.red
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.textFieldDidChange(_:)), name: NSNotification.Name.UITextFieldTextDidChange , object: self.textField);
+        NotificationCenter.default.addObserver(self, selector: #selector(textFieldDidChange(_:)), name: UITextField.textDidChangeNotification , object: self.textField);
     }
 
     // MARK: Actions
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         return stringLength > 4 && stringLength < 7
     }
 
-    func textFieldDidChange(_ notification: Notification) {
+    @objc func textFieldDidChange(_ notification: Notification) {
         if isValidString(self.textField?.text) {
             validImageView?.backgroundColor = UIColor.green
         } else {
